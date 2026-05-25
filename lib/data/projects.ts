@@ -1,7 +1,18 @@
 import type { Project } from "./types";
 
 export const projects: Project[] = [
-    {
+  {
+    id: "media-manager-tag-type",
+    name: "Media Manager — Tag Type Bulk Setter",
+    description:
+      "Chrome extension that auto-sets every tag type dropdown on a Media Manager shelf tag page to a chosen type (e.g. '6up') in one click, instead of updating each one manually.",
+    status: "idea",
+    tags: ["chrome-extension", "browser", "automation", "shelf-tags"],
+    contributors: ["Whit"],
+    details:
+      "When building shelf tags for demos and sales, the same tag type needs to be set on every dropdown on the page — currently done one at a time. The extension would inject a small UI button that finds all tag type selects and sets them to the target value instantly. A sample HTML form from Media Manager is available to reference during development.",
+  },
+  {
     id: "deli-cheese-inventory",
     name: "Deli Cheese Inventory Assistant",
     description:
