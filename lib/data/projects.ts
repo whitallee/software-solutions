@@ -20,7 +20,7 @@ export const projects: Project[] = [
     status: "stalled",
     tags: ["node.js", "puppeteer", "webscraping", "api", "apple-shortcuts", "siri"],
     contributors: ["Lawrence", "Whit"],
-    startedAt: "2025-02-05",
+    startedAt: "2026-02-05",
     details:
       "Since the shortcut runs while you're physically in the store, the GPS address resolves directly to your location. CAPTCHAs are handled automatically via 2captcha. Triggered hands-free via Siri on the floor.",
   },
