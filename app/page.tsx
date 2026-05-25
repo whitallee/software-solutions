@@ -48,6 +48,14 @@ export default function Home() {
           >
             resources →
           </Link>
+          <a
+            href="https://discord.gg/vG3ZC5G3MW"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-border text-muted hover:border-text hover:text-text transition-colors"
+          >
+            join discord ↗
+          </a>
         </div>
       </section>
 

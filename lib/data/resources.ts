@@ -2,6 +2,16 @@ import type { Resource } from "./types";
 
 export const resources: Resource[] = [
   {
+    id: "ssi-discord",
+    name: "SSI Discord",
+    description:
+      "The main hub for the Software Solutions Initiative. Meeting announcements, project updates, and general tech chat.",
+    url: "https://discord.gg/vG3ZC5G3MW",
+    category: "other",
+    tags: ["community", "discord"],
+    addedAt: "2026-05-25",
+  },
+  {
     id: "welcome-to-gas-town",
     name: "Welcome to Gas Town",
     description:
