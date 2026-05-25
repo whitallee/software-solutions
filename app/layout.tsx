@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Software Solutions Initiative",
   description:
-    "A bi-monthly meetup where grocery store workers build tools, solve workflow problems, and explore software together.",
+    "A twice-a-month meetup where grocery store workers build tools, solve workflow problems, and explore software together.",
 };
 
 export default function RootLayout({

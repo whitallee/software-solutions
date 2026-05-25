@@ -25,7 +25,7 @@ export default function Home() {
           <span className="cursor-blink text-red ml-1">_</span>
         </h1>
         <p className="mt-8 text-muted text-sm leading-relaxed max-w-xl">
-          A bi-monthly meetup where grocery store workers build tools, solve
+          A twice-a-month meetup where grocery store workers build tools, solve
           real workflow problems, and explore software together. No experience
           required — just curiosity.
         </p>
