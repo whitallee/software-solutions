@@ -124,11 +124,11 @@ export default function Home() {
         <div className="border-l-2 border-red pl-6 space-y-5">
           <ScheduleRow
             label="frequency"
-            value="First and third week of each month"
+            value="First and third week of each month (usually)"
           />
           <ScheduleRow
             label="format"
-            value="Informal — show up, build stuff, talk tech"
+            value="Informal — show up, build stuff, talk tech/software"
           />
           <ScheduleRow
             label="who"
