@@ -6,6 +6,7 @@ const STATUS_LABEL: Record<ProjectStatus, string> = {
   completed: "DONE",
   idea: "IDEA",
   archived: "ARCHIVED",
+  stalled: "STALLED"
 };
 
 const STATUS_CLASS: Record<ProjectStatus, string> = {
@@ -13,6 +14,7 @@ const STATUS_CLASS: Record<ProjectStatus, string> = {
   completed: "text-muted border-muted",
   idea: "text-blue border-blue",
   archived: "text-muted border-muted opacity-50",
+  stalled: "text-red border-red"
 };
 
 const STATUS_ORDER: ProjectStatus[] = [
@@ -20,6 +22,7 @@ const STATUS_ORDER: ProjectStatus[] = [
   "idea",
   "completed",
   "archived",
+  "stalled"
 ];
 
 export default function ProjectsPage() {

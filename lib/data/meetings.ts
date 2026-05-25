@@ -3,7 +3,7 @@ import type { Meeting } from "./types";
 export const meetings: Meeting[] = [
   {
     slug: "2026-05-14",
-    number: 4,
+    number: 12,
     date: "2026-05-14",
     attendeeCount: 3,
     attendees: ["Whit", "Yohannes", "Los"],
@@ -20,8 +20,8 @@ export const meetings: Meeting[] = [
       "Discussion around the article 'Welcome to Gas Town'",
     ],
     decisions: [
-      "Agreed that fully securing autonomous browser-capable AI agents remains an unsolved problem",
-      "Recognized controlled environments and sandboxing as the safest current approach for experimenting with agentic systems",
+      "Mostly discussion focused meeting",
+      "Brainstorm for next project before next meeting and shar Github repos for any projects we're working on.",
       "Continued interest in exploring AI-native development workflows despite security trade-offs",
     ],
     links: [

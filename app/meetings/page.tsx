@@ -19,7 +19,7 @@ export default function MeetingsPage() {
             href={`/meetings/${meeting.slug}`}
             className="flex items-start justify-between gap-4 border border-border p-6 hover:border-red/40 hover:bg-surface/50 transition-all group"
           >
-            <div className="flex items-start gap-6 min-w-0">
+            <div className="flex items-start gap-6 min-w-0 flex-col sm:flex-row">
               <div className="text-xs text-muted font-mono shrink-0 pt-0.5 w-24">
                 {meeting.date}
               </div>
