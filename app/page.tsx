@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/lib/data/projects";
 import { meetings } from "@/lib/data/meetings";
 import { resources } from "@/lib/data/resources";
+import { upcomingMeeting } from "@/lib/data/config";
 
 export default function Home() {
   const activeCount = projects.filter((p) => p.status === "active").length;
@@ -88,6 +89,25 @@ export default function Home() {
             read full report →
           </span>
         </Link>
+      </section>
+
+      {/* Upcoming Meeting */}
+      <section>
+        <SectionLabel label="next meeting" />
+        <div className="border border-red/30 p-6 bg-red-dim/20">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="w-2 h-2 bg-red rounded-full animate-pulse shrink-0" />
+            <span className="text-xs text-red font-mono">upcoming</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+            <ScheduleRow label="date" value={upcomingMeeting.date} />
+            <ScheduleRow label="time" value={upcomingMeeting.time} />
+            <ScheduleRow label="location" value={upcomingMeeting.location} />
+          </div>
+          <div className="mt-4 text-xs text-muted">
+            Meeting <span className="text-text">#{upcomingMeeting.number}</span>
+          </div>
+        </div>
       </section>
 
       {/* Schedule */}
