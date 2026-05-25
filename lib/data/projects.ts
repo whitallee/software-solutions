@@ -1,6 +1,17 @@
 import type { Project } from "./types";
 
 export const projects: Project[] = [
+    {
+    id: "deli-cheese-inventory",
+    name: "Deli Cheese Inventory Assistant",
+    description:
+      "A mobile-friendly tool to help the deli cheese shop lead log and track the full cheese inventory. She photographs a cheese label, the app extracts all relevant info via AI vision, and she reviews it before saving — no manual typing required.",
+    status: "idea",
+    tags: ["ai", "ocr", "mobile", "inventory", "deli"],
+    contributors: ["Whit"],
+    details:
+      "Current process is manual and repetitive — she logs everything by hand, then re-enters it on the office computer. The goal is to cut that down to a quick photo + review step on her phone, with a clean export she can paste or import when she gets to the desk. Similar AI vision pattern to Cooking Connections.",
+  },
   {
     id: "store-assistant-product-location",
     name: "Store Assistant — Product Location Lookup",
@@ -49,14 +60,14 @@ export const projects: Project[] = [
       "Chefs photograph a physical recipe card — GPT-4o Vision extracts title, ingredients, instructions, and tags, pre-filling the form before the chef reviews and saves. Admins can feature recipes that surface at the top of the customer view. Open TODOs: duplicate recipe detection, self-service password reset, tag filtering on the customer page.",
   },
   {
-    id: "deli-cheese-inventory",
-    name: "Deli Cheese Inventory Assistant",
+    id: "volunteer-board",
+    name: "Partner Volunteer & Events Board",
     description:
-      "A mobile-friendly tool to help the deli cheese shop lead log and track the full cheese inventory. She photographs a cheese label, the app extracts all relevant info via AI vision, and she reviews it before saving — no manual typing required.",
-    status: "idea",
-    tags: ["ai", "ocr", "mobile", "inventory", "deli"],
-    contributors: ["Whit"],
+      "A simple web page where an admin could post volunteer opportunities and store events — replacing the physical bulletin board by the stairs. Partners could RSVP without an account.",
+    status: "archived",
+    tags: ["next.js", "web"],
+    contributors: ["Whit", "Los", "Sean"],
     details:
-      "Current process is manual and repetitive — she logs everything by hand, then re-enters it on the office computer. The goal is to cut that down to a quick photo + review step on her phone, with a clean export she can paste or import when she gets to the desk. Similar AI vision pattern to Cooking Connections.",
+      "Chosen as the group's first project in Meeting #2. Never got off the ground because the intended admin (Verna) wasn't interested in maintaining it. Shelved indefinitely.",
   },
 ];

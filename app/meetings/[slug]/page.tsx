@@ -53,19 +53,21 @@ export default async function MeetingPage({ params }: Props) {
 
       <div className="space-y-12">
         {/* Topics */}
-        <section>
-          <SectionHeader label="topics covered" />
-          <ol className="space-y-3">
-            {meeting.topics.map((topic, i) => (
-              <li key={i} className="flex gap-3 text-sm text-muted">
-                <span className="text-red font-mono shrink-0 w-6 text-right">
-                  {String(i + 1).padStart(2, "0")}.
-                </span>
-                <span>{topic}</span>
-              </li>
-            ))}
-          </ol>
-        </section>
+        {meeting.topics.length > 0 && (
+          <section>
+            <SectionHeader label="topics covered" />
+            <ol className="space-y-3">
+              {meeting.topics.map((topic, i) => (
+                <li key={i} className="flex gap-3 text-sm text-muted">
+                  <span className="text-red font-mono shrink-0 w-6 text-right">
+                    {String(i + 1).padStart(2, "0")}.
+                  </span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
 
         {/* Decisions */}
         {meeting.decisions.length > 0 && (
