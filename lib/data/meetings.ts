@@ -47,7 +47,7 @@ export const meetings: Meeting[] = [
     links: [],
     projectsMentioned: ["deli-cheese-inventory"],
     notes:
-      "Attendee count and names beyond Whit could not be confirmed from the transcript.",
+      "None",
   },
   {
     slug: "2026-05-14",
